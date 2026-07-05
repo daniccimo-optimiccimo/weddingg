@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVFhH7ZYxTsNAEEW/FSIKaKhQOAKKXIHKJ3JAipRwBkSXwkWgQGIDhMgW4u+so63d8c47zqYg5Ucjrdffs+NZuw4AAAAAAADAP3OG7DmBfCbZQP6uyzy+Lm18LG18LG18LG18LG18LG18LG18LG3cLm28aZa4lyZul6HtFroGmT2GzDHk2n38mNk2ZA7pSxO3y9B2C12DzB5D5hhy7T5+zGwbMof0pYnbpWmWyOb9QjZPZPNENk9k80Q2T2TzRDZPZPNENk9k80Q2T2TzRDZPZPNENk9k80Q2T2TzRDZPZPNENm/kMbL5SGY/ImuayGby5VdeB06Pdu1vbTObSWTzu3RdePNo1/7WNrOZRDa/S9eFN4927W9tM5tJZPO7dF1482jX/tY2s5lENr9L14U3j3btb20zm0lk87t0XXjzaNf+1jazmUQ2v0vXhTePdu1vbTObSWTzu3RdePNo1/7WNrOZRDa/S9eFN4927W9tM5tJZPO7dF0AAAAAAAAAAEDbB8jHkHvIe8hXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyF5GLpCv/s8CAAAAAADAf/MDxZP+hQYPDhQAAAAASUVORK5CYII=">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 -->
+    <!-- Font Awesome 6 (иконки) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -270,28 +270,9 @@
             color: #2f6b9f;
         }
 
-        .github-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: #0d1f2f;
-            padding: 0.8rem 1.8rem;
-            border-radius: 40px;
-            color: white;
+        .contact-card a {
             text-decoration: none;
-            font-weight: 500;
-            transition: 0.2s ease;
-            margin: 1rem 0 0.5rem;
-            font-size: 1rem;
-        }
-
-        .github-link i {
-            font-size: 1.5rem;
-        }
-
-        .github-link:hover {
-            background: #1f3b5c;
-            transform: scale(1.02);
+            color: #1f4172;
         }
 
         .footer-note {
@@ -421,7 +402,7 @@
             </div>
         </div>
 
-        <!-- Новая программа дня для 29 августа -->
+        <!-- Программа дня для 29 августа, город Глазов -->
         <div class="timeline">
             <div class="timeline-title">
                 <i class="far fa-clock"></i> Программа дня
@@ -440,7 +421,7 @@
                 <div class="event-time">16:00</div>
                 <div class="event-desc">
                     Отъезд автобуса в Базу на Лесной
-                    <div class="event-address"><i class="fas fa-tree"></i> Посёлок Балезино, База на Лесной</div>
+                    <div class="event-address"><i class="fas fa-tree"></i> База на Лесной, посёлок Балезино</div>
                 </div>
             </div>
 
@@ -471,39 +452,22 @@
 
             <div class="contact-row">
                 <div class="contact-card">
-                    <i class="fas fa-phone-alt"></i> <a href="tel:+79120260875" style="text-decoration: none; color: #1f4172;">8-912-026-08-75</a>
+                    <i class="fas fa-phone-alt"></i> <a href="tel:+79120260875">8-912-026-08-75</a>
                 </div>
                 <div class="contact-card">
-                    <i class="far fa-envelope"></i> <a href="mailto:kseniasannikova143@gmail.com" style="text-decoration: none; color: #1f4172;">kseniasannikova143@gmail.com</a>
+                    <i class="far fa-envelope"></i> <a href="mailto:kseniasannikova143@gmail.com">kseniasannikova143@gmail.com</a>
                 </div>
             </div>
-
-            <hr class="divider-light">
-
-            <a href="https://github.com/danicciomo-optimicciomo/wedding" target="_blank" rel="noopener noreferrer" class="github-link">
-                <i class="fab fa-github"></i> 
-               
+        </div>
 
         <div class="footer-note">
             <i class="fas fa-heart" style="color:#2c6e9e;"></i> С нетерпением ждём встречи! <i class="fas fa-heart" style="color:#2c6e9e;"></i><br>
-            Ксения & Даниил · 29 августа 2026 · Ижевск
+            Ксения & Даниил · 29 августа 2026 · Глазов
         </div>
         <div style="text-align: center; margin-top: 1rem; opacity: 0.5; font-size: 0.7rem; letter-spacing: 2px;">
             ✦ until eternity ✦
         </div>
     </div>
 </div>
-
-<script>
-    const gitLinks = document.querySelectorAll('.github-link');
-    gitLinks.forEach(link => {
-        link.setAttribute('target', '_blank');
-        link.setAttribute('rel', 'noopener noreferrer');
-    });
-    const phoneLink = document.querySelector('a[href^="tel:"]');
-    if(phoneLink) phoneLink.setAttribute('rel', 'nofollow');
-    const mailLink = document.querySelector('a[href^="mailto:"]');
-    if(mailLink) mailLink.setAttribute('rel', 'nofollow');
-</script>
 </body>
 </html>
